@@ -374,4 +374,43 @@ canvas {
   background-position: 50% 50%;
 }
 
+
+.cookie{
+  position: fixed;
+  bottom: 30px;
+  left:20px;
+  padding: 20px;
+  background:white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 330px ;
+  color: @third-color;
+  display:none;
+  font-family: Panton-Regular,sans-serif;
+  .cookie-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: Panton-ExtraBold, sans-serif;
+    .cookie-accept svg{
+      width:20px;
+      height:20px;
+      fill: @second-color;
+      cursor:pointer;
+    }
+  }
+  .cookie-text{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top:10px;
+  }
+  .cookie-button .button{
+    border:0;
+    outline: none;
+    margin-top:10px;
+    width: 100%;
+
+  }
+}
 @import "adaptive";
