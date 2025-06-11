@@ -185,29 +185,32 @@
     margin: 0;
     top: 0;
     background: #000000b0;
+    z-index: 9999999;
     ul {
       align-items: center;
       flex-direction: column;
       justify-content: flex-start;
+
       .menu-item {
         margin: 15px 0;
       }
     }
-    .open {
-      display: flex;
-      justify-content: center;
-    }
-    .close {
-      display: block;
-      height: 24px;
-      width: 24px;
-      fill: rgb(164, 107, 0);
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
+
+  }
+  .open {
+    display: flex;
+    justify-content: center;
   }
 
+  .close {
+    display: block;
+    height: 24px;
+    width: 24px;
+    fill: rgb(164, 107, 0);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
   .burger {
     display: block;
     margin-right: 20px;
